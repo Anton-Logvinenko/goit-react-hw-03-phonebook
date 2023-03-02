@@ -1,0 +1,15 @@
+.filterLable{
+font-size: 20px;
+}
+
+
+.filterInput {
+  height: 30px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.filterInput:hover,
+.filterInput:focus {
+  border-color: #07bff7;
+}

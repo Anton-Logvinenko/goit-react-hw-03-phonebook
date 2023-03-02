@@ -1,0 +1,19 @@
+.contactList {
+  height: 180px;
+  list-style: decimal;
+  border: 1px solid black;
+  overflow:auto;
+}
+
+.text {
+  display: inline-block;
+  width: 320px;
+  padding: 0;
+  margin: 5px 0;
+}
+.btnDelete:hover,
+.btnDelete:focus {
+  background-color: #07bff7;
+  border: 1px solid black;
+  border-radius: 2px;
+}

@@ -1,0 +1,29 @@
+.lable {
+  display: block;
+margin-bottom: 25px;
+  font-size: 20px;
+}
+.input {
+display: block;
+height: 30px;
+  margin-top: 10px;
+  font-size: 20px;
+
+}
+
+.input:hover, .input:focus{
+ border-color: #07bff7;
+}
+
+.addBtn{
+
+  padding: 10px 20px;
+border-radius: 5px;
+font-size: 20px;
+cursor: pointer;
+}
+
+.addBtn:hover, .addBtn:focus{
+  background-color: #07bff7;
+}
+
