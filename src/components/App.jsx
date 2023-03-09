@@ -35,6 +35,25 @@ export class App extends React.Component {
         }));
   };
 
+  // РАБОТА с localStorage
+  // 1) если произошли изменения, то записываем components в   localeStorage
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.contacts !== this.state.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
+
+  // 2) если localStorage по ключу не пустой (!==null), то записываем информацию в state
+  componentDidMount() {
+    const saveContacts = localStorage.getItem('contacts');
+
+    if (this.state.contacts !== null) {
+      this.setState({ contacts: JSON.parse(saveContacts) });
+      return;
+    }
+    this.state.contacts = [];
+  }
+
   // Фильтрация
   changeFilter = event => {
     this.setState({ filter: event.currentTarget.value });
@@ -74,3 +93,18 @@ export class App extends React.Component {
     );
   }
 }
+
+// // 1) если произошли изменения, то записываем recipes в   localeStorage
+// componentDidUpdate(pravProps, prevState){
+//   if(prevState.contacts!==this.state.contacts){
+//     localStorage.setItem('contacts', JSON.stringify(this.state.contacts) )
+//   }
+//   }
+
+//   // 2) если localStorage по ключу не пустой (!==null), то записываем информацию в state
+//   componentDidMount(){
+//    const saveContacts=localStorage.getItem('contacts')
+//     if(saveContacts!==null){
+//      this.setState({contacts: JSON.parse(saveContacts)})
+//     }
+//   }

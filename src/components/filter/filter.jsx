@@ -22,3 +22,4 @@ Filter.propTypes = {
   filter: PropTypes.string,
   onChange: PropTypes.func,
 };
+
