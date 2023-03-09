@@ -94,17 +94,3 @@ export class App extends React.Component {
   }
 }
 
-// // 1) если произошли изменения, то записываем recipes в   localeStorage
-// componentDidUpdate(pravProps, prevState){
-//   if(prevState.contacts!==this.state.contacts){
-//     localStorage.setItem('contacts', JSON.stringify(this.state.contacts) )
-//   }
-//   }
-
-//   // 2) если localStorage по ключу не пустой (!==null), то записываем информацию в state
-//   componentDidMount(){
-//    const saveContacts=localStorage.getItem('contacts')
-//     if(saveContacts!==null){
-//      this.setState({contacts: JSON.parse(saveContacts)})
-//     }
-//   }
