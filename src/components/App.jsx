@@ -51,7 +51,7 @@ export class App extends React.Component {
       this.setState({ contacts: JSON.parse(saveContacts) });
       return;
     }
-    this.setStates({ contacts: [] });
+    this.setState({ contacts: [] });
   }
 
   // Фильтрация
