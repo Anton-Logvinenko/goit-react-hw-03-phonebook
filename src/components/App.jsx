@@ -47,7 +47,7 @@ export class App extends React.Component {
   componentDidMount() {
     const saveContacts = localStorage.getItem('contacts');
 
-    if (this.state.contacts !== null) {
+    if (saveContacts !== null) {
       this.setState({ contacts: JSON.parse(saveContacts) });
       return;
     }
