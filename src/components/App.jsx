@@ -51,7 +51,7 @@ export class App extends React.Component {
       this.setState({ contacts: JSON.parse(saveContacts) });
       return;
     }
-    this.state.contacts = [];
+    this.setStates({ contacts: [] });
   }
 
   // Фильтрация
@@ -93,4 +93,3 @@ export class App extends React.Component {
     );
   }
 }
-
